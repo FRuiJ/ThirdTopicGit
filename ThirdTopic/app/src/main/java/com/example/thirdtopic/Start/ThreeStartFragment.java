@@ -18,7 +18,6 @@ public class ThreeStartFragment extends Fragment {
     public Button button;
     public View view;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -28,7 +27,8 @@ public class ThreeStartFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MainActivity.actionStart(ThreeStartFragment.class);
+                MainActivity.actionStart(getActivity());
+                getActivity().finish();
             }
         });
         return view;

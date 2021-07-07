@@ -36,7 +36,7 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
         initView();
         initAddList();
-         myAdapter = new MyAdapter(getSupportFragmentManager());
+        myAdapter = new MyAdapter(getSupportFragmentManager());
         viewPager.setAdapter(myAdapter);
         raList = radioGroup.getTouchables();
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
